@@ -25,7 +25,7 @@ def main():
                 print("Данной книги нет у нас в библиотеке")
 
         elif answer == '3':
-            field = input("Введите по какому критерию нужно найти книгу (Подсказка: по id, названию, году): ")
+            field = input("Введите по какому критерию нужно найти книгу (Подсказка: по id, title, year): ")
             query = input("Введие значение, по которому вы хотите найти книгу: ")
             result = library_manager.search_books(field, query)
             if result:
